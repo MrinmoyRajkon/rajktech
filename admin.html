@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Raj K Tech Admin</title>
+</head>
+
+<body style="font-family:Arial; text-align:center;">
+
+<h1>Raj K Tech Admin Panel</h1>
+
+<input id="title" placeholder="Post Title"><br><br>
+<textarea id="content" placeholder="Write article"></textarea><br><br>
+
+<button onclick="addPost()">Publish Post</button>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+apiKey: "YOUR_KEY",
+authDomain: "YOUR_DOMAIN",
+projectId: "YOUR_ID"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function addPost(){
+let title = document.getElementById("title").value;
+let content = document.getElementById("content").value;
+
+await addDoc(collection(db, "posts"), {
+title: title,
+content: content
+});
+
+alert("Post Published!");
+}
+
+</script>
+
+</body>
+</html>
