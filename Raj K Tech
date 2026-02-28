@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Raj K Tech - Tech Blog & Gaming Setup Ideas</title>
+
+<meta name="description" content="Raj K Tech - Latest tech news, gaming setups, gadget reviews and tutorials.">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<h2>Raj K Tech</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<button onclick="toggleMode()">🌙</button>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+<h1 class="glow">Raj K Tech</h1>
+<p>Your Hub for Gaming, Gadgets & Tech Tutorials</p>
+<a href="blog.html" class="btn">Explore Articles</a>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+<h2>Why Choose Raj K Tech?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Latest Tech News</h3>
+<p>Daily updates on gadgets and innovations.</p>
+</div>
+
+<div class="card">
+<h3>Gaming Setups</h3>
+<p>Budget to premium gaming room ideas.</p>
+</div>
+
+<div class="card">
+<h3>Student Guides</h3>
+<p>Best laptops and study tech tools.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- BLOG PREVIEW -->
+<section class="blog">
+
+<h2>Latest Articles</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Best Gaming Setup Under ₹50K</h3>
+<p>Complete budget gaming guide.</p>
+</div>
+
+<div class="card">
+<h3>Top Laptops for Students 2026</h3>
+<p>Affordable laptops for study & coding.</p>
+</div>
+
+<div class="card">
+<h3>Best RGB Accessories</h3>
+<p>Make your desk look professional.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Raj K Tech | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
